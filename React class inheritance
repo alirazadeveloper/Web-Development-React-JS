@@ -1,0 +1,25 @@
+
+class holiday{
+   constructor(dest,day) {
+    this.dest=dest;
+    this.day=day;
+}
+showif(){
+    console.log(`${this.dest} | ${this.day}`);
+}
+
+}
+
+class subclass extends holiday{
+   constructor(dest,day,gerr) {
+    super(dest,day)
+    this.gerr=gerr
+}
+showinfo(){
+    super.showif();
+    console.log(`hey ${this.gerr.join(' and ')}`);
+}
+
+}
+var obj1=new subclass('RYK','Monday',['ali','raza','faiz']);
+obj1.showinfo();
