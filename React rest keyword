@@ -1,0 +1,11 @@
+
+... rest keyword
+var obj={name:'ali',lname:'raza',gen:'male'};
+var {first,...rest}=obj;
+console.log(first);
+console.log(rest);
+
+var arr1=['ali','raza','good'];
+let [first,...rest]=arr1;
+console.log(first);
+console.log(rest);
