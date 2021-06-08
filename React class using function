@@ -1,0 +1,12 @@
+
+function holiday(dest,day) {
+    this.dest=dest;
+    this.day=day;
+}
+
+holiday.prototype.showinfo = function() {
+    console.log(this.dest+' | '+this.day);
+};
+
+var obj=new holiday('RYK','Monday');
+obj.showinfo();
